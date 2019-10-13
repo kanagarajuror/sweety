@@ -1,0 +1,5 @@
+<%= form_tag reports_month_wise_result_path, method: :get do %>
+<label>Month wise</label>
+<%= date_select "reading","created_at",discard_day: true%>
+<%= submit_tag "Submit"%>
+<% end %>

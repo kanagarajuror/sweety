@@ -1,0 +1,5 @@
+<%= form_tag reports_day_wise_result_path, method: :get do %>
+<label>Date Wise</label>
+<%= date_select "reading","created_at", :disabled =>true %>
+<%= submit_tag "Submit"%>
+<% end %>

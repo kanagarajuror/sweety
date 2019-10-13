@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User name:</strong>
+  <%= current_user.name %>
+</p>
+
+<p>
+  <strong>Reading value:</strong>
+  <%= @patient.reading_value %>
+</p>
+<p>
+  <strong>Reading date:</strong>
+  <%= @patient.created_at.strftime("%Y-%m-%d") %>
+</p>
+
+<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Back', patients_path %>
