@@ -1,27 +1,2 @@
-<h2><%= "Month wise Result" %></h2>
-<%if !@readings.blank?%>
-<table>
-<thead>
-<tr>
-<th>Result Type</th>
-<th>Glucose Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Minimum</td>
-<td><%= @readings[0].to_i %></td>
-</tr>
-<tr>
-<td>Maximum</td>
-<td><%= @readings[1].to_i %></td>
-</tr>
-<tr>
-<td>Average</td>
-<td><%= @readings[2].to_f%></td>
-</tr>
-</tbody>
-</table><%else%>
-
-No Records Found.
-<%end%>
+<h2 align="center"><%= "Month wise Result" %></h2>
+<%= render 'form' %>

@@ -1,23 +1,2 @@
-<h2><%= "Today Result" %></h2>
-<table>
-<thead>
-<tr>
-<th>Result Type</th>
-<th>Glucose Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Minimum</td>
-<td><%= @readings[0]%></td>
-</tr>
-<tr>
-<td>Maximum</td>
-<td><%= @readings[1] %></td>
-</tr>
-<tr>
-<td>Average</td>
-<td><%= @readings[2]%></td>
-</tr>
-</tbody>
-</table>
+<h2 align="center"><%= "Today Result" %></h2>
+<%= render 'form' %>
